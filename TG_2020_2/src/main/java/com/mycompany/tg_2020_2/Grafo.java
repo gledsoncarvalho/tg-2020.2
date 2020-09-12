@@ -17,8 +17,9 @@ import javax.swing.JOptionPane;
  * @author gleds
  */
 public class Grafo {
-    
-    public static void main(String[] args) { }
+
+    public static void main(String[] args) {
+    }
 
     public static List<ArrayList> lerListaAdjacencia(String filename) {
         System.out.println(System.getProperty("user.dir") + filename);
@@ -39,6 +40,16 @@ public class Grafo {
             JOptionPane.showMessageDialog(null, "Arquivo não encontrado!!");
         }
         return listas;
+    }
+
+    static void print(List<ArrayList> listas) {
+        for (ArrayList linha : listas) {
+            System.out.print(linha.get(0) + ": ");
+            for (int j = 1; j < linha.size(); j++) {
+                System.out.print(linha.get(j) + " ");
+            }
+            System.out.println();
+        }
     }
 
 }

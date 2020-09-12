@@ -15,9 +15,12 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        // Insira a descrição da lista de adjacência .txt no valor da variável abaixo, sem remover as barras
         String filename = "\\grafo-25000.txt";
 
+        // Faz a leitura do arquivo.txt e armazena na estrutura.
         List<ArrayList> grafo = Grafo.lerListaAdjacencia(filename);
+        Grafo.print(grafo);
     }
 
 }
