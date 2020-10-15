@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.tg_2020_2.MetodosBasicos;
+package Grafo;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -15,9 +15,9 @@ import java.util.Scanner;
  *
  * @author franc
  */
-public class Adjacentes {
+public class Metodos {
 
-    static private String caminho = "C:\\git\\tg-2020.2\\TG_2020_2\\file1.txt";
+    static private String caminho = ":\\git\\tg-2020.2\\TG_2020_2\\file1.txt";
 
     public static void main(String... args) throws FileNotFoundException {
 

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.tg_2020_2;
+package Grafo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Insira a descrição da lista de adjacência .txt no valor da variável abaixo, sem remover as barras
-        String filename = "\\grafo-25000.txt";
+        String filename = "\\file1.txt";
 
         // Faz a leitura do arquivo.txt e armazena na estrutura.
         List<ArrayList> grafo = Grafo.lerListaAdjacencia(filename);

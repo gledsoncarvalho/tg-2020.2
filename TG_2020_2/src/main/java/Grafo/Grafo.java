@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.tg_2020_2;
+package Grafo;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -51,5 +51,6 @@ public class Grafo {
             System.out.println();
         }
     }
+    
 
 }
