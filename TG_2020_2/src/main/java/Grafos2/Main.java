@@ -17,7 +17,7 @@ import java.util.Scanner;
  */
 public class Main {
     
-    static private String diretorio = "D:\\git\\tg-2020.2\\TG_2020_2\\file3.txt";
+    static private String diretorio = "D:\\git\\tg-2020.2\\TG_2020_2\\grafo-25000.txt";
     
     public static void main (String[] args)throws FileNotFoundException{ 
         int nVertices = NumVertices();
@@ -25,10 +25,16 @@ public class Main {
         List<Integer>[] grafo = new ArrayList[nVertices];
         carregarGrafo(grafo);
         
-        print(grafo);
-        //getAdjacentes(grafo, 1025);    
-        ehRegular(grafo, nVertices);
-        ehCompleto(grafo, nVertices);
+        //print(grafo);
+        // ehRegular(grafo, nVertices);
+        //ehCompleto(grafo, nVertices);
+        
+        ArrayList<Integer> adjacentes = new ArrayList();
+        adjacentes = getAdjacentes(grafo, 1025);//funcionando
+        System.out.print("Os adjacentes são: ");
+        for(int i = 0; i < adjacentes.size(); i++){
+            System.out.print(adjacentes.get(i) + " ");
+        }
     }
  
         //conta num de vértices
@@ -79,19 +85,16 @@ public class Main {
         }
     }
    
-    static void getAdjacentes(List[] grafo, int vertices) {//FUNCIONANDO
-        //varrer o gráfico
-        for (int i = 0; i < grafo.length; i++) {
-            //se o vértice de saída foi igual ao vértice do parâmetro
+    public static ArrayList<Integer> getAdjacentes(List[] grafo, int vertices){
+        ArrayList<Integer> adjacentes = new ArrayList();
+        for (int i = 0; i < grafo.length; i++){
             if (grafo[i].get(0).equals(vertices)){
-                System.out.println("os adjacestes de " + vertices + " são:");
-                //printar todos os adjacentes
-                for (int j = 1; j < grafo[i].size(); j++) {
-                    System.out.print(grafo[i].get(j) + " ");
+                for (int j = 1; j < grafo[i].size(); j++){
+                    adjacentes.add((Integer) grafo[i].get(j));
                 }
             }
-
         }
+        return adjacentes;
     }
     
     static boolean ehRegular(List[] grafo, int nVertices){
