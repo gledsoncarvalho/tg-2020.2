@@ -29,12 +29,15 @@ public class Medotos {
         carregarGrafo(grafo);
         
 
-        //print(grafo);
-        // ehRegular(grafo, nVertices);
-        //ehCompleto(grafo, nVertices);
+        print(grafo);//print do grafo completo
+        ehRegular(grafo, nVertices); //se é regular
+        ehCompleto(grafo, nVertices); //se é completo
         
+        //para fazer o getAdjacentes funcionar
         ArrayList<Integer> adjacentes = new ArrayList();
-        adjacentes = getAdjacentes(grafo, 1025);//funcionando
+        adjacentes = getAdjacentes(grafo, 1025);
+        
+        //print dos adjacentes
         System.out.print("Os adjacentes são: ");
         for(int i = 0; i < adjacentes.size(); i++){
             System.out.print(adjacentes.get(i) + " ");
