@@ -15,9 +15,12 @@ import java.util.Scanner;
  *
  * @author brenn
  */
-public class Main {
+public class Medotos {
     
-    static private String diretorio = "D:\\git\\tg-2020.2\\TG_2020_2\\grafo-25000.txt";
+
+    static private String diretorio = "C:\\git\\tg-2020.2\\TG_2020_2\\file3.txt";
+
+ 
     
     public static void main (String[] args)throws FileNotFoundException{ 
         int nVertices = NumVertices();
@@ -25,6 +28,7 @@ public class Main {
         List<Integer>[] grafo = new ArrayList[nVertices];
         carregarGrafo(grafo);
         
+
         //print(grafo);
         // ehRegular(grafo, nVertices);
         //ehCompleto(grafo, nVertices);
@@ -35,6 +39,14 @@ public class Main {
         for(int i = 0; i < adjacentes.size(); i++){
             System.out.print(adjacentes.get(i) + " ");
         }
+
+        
+        getAdjacentes(grafo, 1025);    
+        System.out.println("\nÉ regular? ");
+        ehRegular(grafo, nVertices);
+        System.out.println("É completo? ");
+        ehCompleto(grafo, nVertices);
+
     }
  
         //conta num de vértices
@@ -123,34 +135,3 @@ public class Main {
         return true;
     }
 }
-
- /* static boolean ehRegular(List[] grafo){
-        //criação de vetor
-        int vetor[] = new int[grafo.length];
-        int count = 0;
-        //varrer vértices base
-        for (int i = 0; i < grafo.length; i++){
-            //varrer vértices adjacentes
-            for (int j = 1; j < grafo[i].size(); j++){
-                //variável que indica quantidade de vértices adjacentes
-                int a1 = grafo[i].size()-1;
-                //add esse valor ao vetor
-                vetor[i] = a1;    
-        }  
-    }
-    //varrer vetor auxiliar
-    for (int k = 0; k < vetor.length-1; k++){
-        //comparar os valores dos elementos
-        //se for igual, retorna true
-        if (vetor[k] == vetor[k+1]){
-            count++;
-        //se for falso retorna false
-        } else {
-            System.out.println("false");
-            return false;
-        }
-    }
-    //retorno do true
-    System.out.println("true");
-    return true;
-    }*/
