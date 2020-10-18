@@ -8,8 +8,11 @@
 
 - Passo a passo para utilizar o projeto *Grafos2*:
 1. Trocar o diretório do grafo na Classe `Main` da variável `diretorio` para o diretório do grafo;
-2. Escolher o método a ser usado, podendo ser o : `getAdjacentes`, `ehRegular` ou `ehCompleto`;
-3. Caso a escolha seja o `getAdjacentes`, a variável `adjacentes` terá que ser iniciada.
+2. Escolher o método a ser usado, podendo ser o : `getAdjacentes`, `ehRegular`,`ehCompleto` ou `ehConexo`;
+3. Caso a escolha seja o `getAdjacentes`, a variável `adjacentes` terá que ser iniciada;
+4. Caso a escolha seja o `ehRegular`, retornará no console a mensagem `true` ou  `false`;
+5. Caso a escolha seja o `ehCompleto`, retornará no console a mensagem `true` ou  `false`;
+6. Caso a escolha seja o `ehConexo`, retornará no console a mensagem `true` ou  `false`;
 
 MEMBROS:
 - Brenno Santos Oliveira;
