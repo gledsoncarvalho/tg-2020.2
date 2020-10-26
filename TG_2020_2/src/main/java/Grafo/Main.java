@@ -21,9 +21,17 @@ public class Main {
         // Faz a leitura do arquivo.txt e armazena na estrutura.
         List<Vertice> grafo = Grafo.lerListaAdjacencia(filename);
         
-//        Grafo.djikstra(grafo.get(1), grafo);
-        Grafo.dijkstra2(grafo.get(0), grafo.get(3), grafo);
-//        Grafo.print(grafo);
+        //Método que irá printar o grafo passado como parâmetro
+        Grafo.print(grafo);
+         
+        //1 Método dijkstra 
+        Grafo.djikstra(grafo.get(1), grafo);
+       
+        //2 Método dijkstra
+        Grafo.dijkstra2(grafo.get(0), grafo.get(3), grafo);       
+
+
+       
     }
 
 }
