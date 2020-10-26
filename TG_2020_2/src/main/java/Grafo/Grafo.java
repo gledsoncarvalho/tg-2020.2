@@ -60,7 +60,7 @@ public class Grafo {
     }
 
     //1 Método dijkstra passando um vertice e o grafo como parâmetro, e retornando os menor caminho
-    static void djikstra(Vertice vertice, List<Vertice> grafo) {
+    static void dijkstra(Vertice vertice, List<Vertice> grafo) {
         Vertice raiz = vertice;
         List<Vertice> vertices = new ArrayList();
         List<Boolean> s = new ArrayList();

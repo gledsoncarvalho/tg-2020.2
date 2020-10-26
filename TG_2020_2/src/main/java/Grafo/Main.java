@@ -25,7 +25,7 @@ public class Main {
         Grafo.print(grafo);
          
         //1 Método dijkstra 
-        Grafo.djikstra(grafo.get(1), grafo);
+        Grafo.dijkstra(grafo.get(1), grafo);
        
         //2 Método dijkstra
         Grafo.dijkstra2(grafo.get(0), grafo.get(3), grafo);       
