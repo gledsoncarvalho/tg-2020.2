@@ -16,11 +16,12 @@ public class Main {
 
     public static void main(String[] args) {
         // Insira a descrição da lista de adjacência .txt no valor da variável abaixo, sem remover as barras
-        String filename = "\\file1.txt";
+        String filename = "\\file3.txt";
 
         // Faz a leitura do arquivo.txt e armazena na estrutura.
-        List<ArrayList> grafo = Grafo.lerListaAdjacencia(filename);
-        Grafo.print(grafo);
+        List<Vertice> grafo = Grafo.lerListaAdjacencia(filename);
+        Grafo.djikstra(grafo.get(0), grafo);
+//        Grafo.print(grafo);
     }
 
 }
