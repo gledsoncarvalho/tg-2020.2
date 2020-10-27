@@ -5,6 +5,7 @@
 - Passo a passo para utilizar o projeto *Grafo*:
 1. Insira a lista de adjacência `.txt` no mesmo diretório do projeto;
 2. Altere o conteúdo da variável `"fileName"` com a descrição da lista de adjacência.
+3. O `.txt` usado nos algoritmos de dijkstra foi o `.file3`.
 
 - Passo a passo para utilizar o projeto *Grafos2*:
 1. Trocar o diretório do grafo na Classe `Main` da variável `diretorio` para o diretório do grafo;
