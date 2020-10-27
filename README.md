@@ -13,16 +13,16 @@ MEMBROS:
  1. Entrar na classe `Main`;
  2. Insira a lista de adjacência `.txt` no mesmo diretório do projeto;
  3. Altere o conteúdo da variável `"fileName"` com o mesmo nome do `.txt` adicionado no diretorio do projeto;
- 4. E dar `Run File` no método `Grafo.print(grafo);`;
+ 4. E dar `Run File` no método `Grafo.print(grafo)`.
 
 
 # Métodos Básicos
 - Descricao:
- 1. getAdjacentes: retorna a lista de adjacentes de um vértice passado como parâmetro.
+ 1. getAdjacentes: retorna a lista de adjacentes de um vértice passado como parâmetro;
  
- 2. ehRegular: verifica se um determinado grafo é regular ou não. Deve retornar True ou False a depender do grafo.
+ 2. ehRegular: verifica se um determinado grafo é regular ou não. Deve retornar True ou False a depender do grafo;
  
- 3. ehCompleto: verifica se um determinado grafo é completo ou não. Deve retornar True ou False a depender do grafo.
+ 3. ehCompleto: verifica se um determinado grafo é completo ou não. Deve retornar True ou False a depender do grafo;
  
  4. ehConexo: verifica se um determinado grafo é conexo ou não. Deve retornar True ou False a depender do grafo. Deve utilizar busca em largura ou busca em profundidade para     fazer essa verificação.
 
@@ -40,13 +40,13 @@ MEMBROS:
  
  6. Caso a escolha seja o `ehCompleto`, retornará no console a mensagem `true` ou  `false`;
  
- 7. Caso a escolha seja o `ehConexo`, retornará no console a mensagem `true` ou  `false`;
+ 7. Caso a escolha seja o `ehConexo`, retornará no console a mensagem `true` ou  `false`.
   
  # Algoritmo de Dijkstra
  - Descricao:
- 1. Implementação do algoritmo de Dijkstra que calcula o menor caminho de um vértice a outro no grafo.
+ 1. Implementação do algoritmo de Dijkstra que calcula o menor caminho de um vértice a outro no grafo;
  
- 2. dijkstra: recebe como parâmetro um vértice e o algoritmo retorna o menor caminho deste para todos os demais vértices. Neste caso, deve-se imprimir na tela a menor distância para cada par de vértice e o caminho final entre eles.
+ 2. dijkstra: recebe como parâmetro um vértice e o algoritmo retorna o menor caminho deste para todos os demais vértices. Neste caso, deve-se imprimir na tela a menor distância para cada par de vértice e o caminho final entre eles;
  
  3. dijkstra2: recebe como parâmetro dois vértices e o algoritmo retorna o menor caminho somente entre estes dois vértices. Neste caso, deve-se imprimir na tela a menor distância entre eles e o caminho final.
  
@@ -59,7 +59,7 @@ MEMBROS:
   
   4. Dar `Run File` no método `Grafo.dijkstra(grafo.get(1), grafo);`;
   
-  5. Dar `Run File` no método `Grafo.dijkstra2(grafo.get(0), grafo.get(3), grafo);`;
+  5. Dar `Run File` no método `Grafo.dijkstra2(grafo.get(0), grafo.get(3), grafo)`.
  
  
  
